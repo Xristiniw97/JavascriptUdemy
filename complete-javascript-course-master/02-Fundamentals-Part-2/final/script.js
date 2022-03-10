@@ -587,3 +587,29 @@ console.log(calcAverage([2, 3, 7]));
 console.log(calcAverage(totals));
 console.log(calcAverage(tips));
 */
+
+
+// Basic Array Operations 
+const friends = ['Xristina','Minas'];
+//προσθηκη στο τελος
+friends.push('Elena');
+//προσθήκη στην αρχή
+friends.unshift('Aggela');
+console.log(friends);
+
+//remove elements
+const namepop = friends.pop();
+console.log(namepop);
+const nameshift = friends.shift();
+console.log(nameshift);
+
+//se poia thesh einai kati mesa se ena pinaka
+console.log(friends.indexOf('Minas'));
+//otan den vriskei kati ston pinaka vgazei -1
+console.log(friends.indexOf("Maria"));
+
+//thn idia douleia kanei kai h entolh includes
+//ttue an vrei thn leksi
+console.log(friends.includes('Minas'));
+//false otan den periexei kati ston pinaka
+console.log(friends.includes("Elena"));
