@@ -1,12 +1,14 @@
 
 let bill= 100;
 
-let calcTip = (a) => {return (a> 50 && a<300) ? a*0.15 : a*0.2}; 
-let bills = [calcTip(125),calcTip(555),calcTip(44)];
-let total = [calcTip(125)+125,calcTip(555)+555,calcTip(44)+44];
+const calcTip = (a) => {return (a> 50 && a<300) ? a*0.15 : a*0.2}; 
+const bills = [125,555,44];
+const tips = [calcTip(bills[0]),calcTip(bills[1]),calcTip(bills[2])]
+let total = [bills[0]+tips[0],bills[1]+tips[1],bills[2]+tips[2]]
 
-console.log(calcTip(bill));
+
 console.log(bills);
+console.log(tips);
 console.log(total);
 
 
